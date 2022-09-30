@@ -1,2 +1,2 @@
 # Demo page
-A demo Pilet. Can be used as a page, a tile or an extension. 
+A demo Pilet. A template that can be used as a page, a tile or an extension. 
