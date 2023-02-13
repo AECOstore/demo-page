@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { PiletApi } from 'consolid-shell';
 import {Link} from 'react-router-dom'
+import App from './App'
 
 export function setup(app: PiletApi) {
   const connect = app.makeState(app)
@@ -9,7 +10,7 @@ export function setup(app: PiletApi) {
   app.showNotification('Registered Demo Page!', {
     autoClose: 2000,
   });
-  app.registerPage("/demo", Module)
+  app.registerPage("/demo", () => <Module/>)
   app.registerMenu(() =>
     <Link to="/demo">Demo</Link>
   );
