@@ -9,7 +9,7 @@ const App = ({ piral }: { piral: PiletApi }) => {
       <Grid container spacing={2}>
       {children.map(child => {
         console.log('child', child)
-                return <Grid item xs={4} key={child.link} style={{border:"1px solid lightgray"}}>
+                return <Grid item xs={child.initialColumns} key={child.link} style={{border:"1px solid lightgray"}}>
                 
                     <piral.Extension name={`${child.link}`} />
                 </Grid>
