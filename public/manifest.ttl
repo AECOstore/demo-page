@@ -6,7 +6,7 @@
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 
 <> a mfe:Manifest;
-    rdfs:label "project" ;
+    rdfs:label "Demo" ;
     pav:hasVersion <#v2> .
 
 
